@@ -12,11 +12,21 @@
 
 body {
   font-family: "Lato", Sans Serif;
-  height: 100%;  
 }
 h1 {
   font-family: "Nunito", Sans Serif; 
 }
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+  z-index: 9999;
+  background-color: #00bcd4;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 9999;
+}  
 .navbar li a,
 .navbar .navbar-brand {
   color: #fff !important;
@@ -26,18 +36,10 @@ h1 {
   color: #00bcd4 !important;
   background-color: #fff !important;
 }
-.navbar {
-  border: 0;
-  background-color: #00bcd4;
-  font-size: 12px !important;
-  line-height: 1.4 !important;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  z-index: 9999;
-}
-.icon-bar{
-  background-color:#fff !important;
-}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+  }
 .jumbotron {
   padding-top: 200px;
   height:565px;
@@ -94,7 +96,7 @@ h1 {
 </style>
 </head>
   
-<body id="PersonalPage" data-spy="scroll" data-target=".navbar" data-offset="60"> 
+<body id="content" data-spy="scroll" data-target=".navbar" data-offset="60"> 
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -103,7 +105,7 @@ h1 {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                     </button>
-        <a href="#PersonalPage" class="navbar-brand">Renan Cunha</a>
+        <a href="#content" class="navbar-brand">Renan Cunha</a>
       </div>
 
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -204,7 +206,7 @@ h1 {
   <footer>
     <div class="footer text-center">
       <p class="text-center">Made with <span class="glyphicon glyphicon-heart"></span> and &#x2615;</p>
-      <a href="#PersonalPage" title="To Top">
+      <a href="#content" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span> <br>
         <span class="text-center">Back to Top</span>
       </a>
@@ -218,7 +220,7 @@ h1 {
  <script>
     $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#PersonalPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#content']").on('click', function(event) {
 
     // Prevent default anchor click behavior
     //event.preventDefault();
